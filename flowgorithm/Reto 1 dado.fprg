@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Reto 1 dado"/>
+        <attribute name="authors" value="Kevin Acosta"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-23 09:03:55 p.&#8239;m."/>
+        <attribute name="created" value="S2V2aW4gQWNvc3RhO0xBUFRPUC1QRkwxTjdRUzsyMDI1LTExLTIzOzA4OjUwOjExIHAu4oCvbS47MTE4OTU="/>
+        <attribute name="edited" value="S2V2aW4gQWNvc3RhO0xBUFRPUC1QRkwxTjdRUzsyMDI1LTExLTIzOzA5OjAzOjU1IHAu4oCvbS47MTsxMjAxMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Numero" type="Integer" array="False" size=""/>
+            <assign variable="Numero" expression="random (6) + 1"/>
+            <output expression="&quot;el dado cayo en: &quot; &amp; numero" newline="True"/>
+            <if expression="numero % 2 == 0">
+                <then>
+                    <output expression="&quot;El nuemro es par&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;El numero es impar&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
