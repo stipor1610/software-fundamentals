@@ -11,4 +11,4 @@ def lanzar_dado():
     else:
         print(" El número es IMPAR")
 
-lanzar_dado()
+lanzar_dado() 

@@ -1,12 +1,21 @@
-def reto2():
-    print("\n=== RETO 2: Suma de Lanzamientos ===")
+import random
+
+def lanzar_varios_dados():
     
+    # le pregunto al jugador cuantas veces quiere tirar
     veces = int(input("Cuantas veces quieres lanzar el dado? "))
+    
+    # aqui voy guardando la suma
     suma = 0
     
+    # repito los lanzamientos
     for i in range(veces):
         numero = random.randint(1, 6)
-        print(f"Lanzamiento {i+1}: {numero}")
+        print("Lanzamiento", i+1, ":", numero)
         suma = suma + numero
     
-    print(f"\nLa suma total es: {suma}")
+    # al final muestro el total
+    print("\nLa suma total es:", suma)
+
+# ejecuto la funcion
+lanzar_varios_dados()
